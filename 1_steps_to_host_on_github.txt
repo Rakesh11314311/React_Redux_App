@@ -1,0 +1,17 @@
+Commands:
+
+npm install gh-pages --save-dev
+git init 
+git add .
+git status
+
+and then follow steps to put upload all files to github
+
+******************************************
+
+package.json changes:
+
+"homepage": "https://(github username).github.io/(repo name)"
+//add following in scripts
+"predeploy": "vite build",
+"deploy": "gh-pages -d dist"
